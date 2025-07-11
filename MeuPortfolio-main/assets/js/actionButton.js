@@ -1,42 +1,52 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Ajusta para garantir que o site comece no topo ao recarregar
-    if (window.location.hash !== '#inicio') {
-        window.location.hash = '#inicio';
-    }
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Botões flutuantes
     const backToTopButton = document.getElementById('backToTop');
     const whatsappButton = document.getElementById('whatsappButton');
-
-    // Função para exibir ou esconder os botões ao rolar a página
+    
+    // Header para verificar scroll
+    const header = document.querySelector('.header');
+    
+    // Mostrar/ocultar botões ao rolar
     function toggleButtons() {
         const scrollPosition = window.scrollY;
-        if (scrollPosition > 100) {
-            backToTopButton.style.display = 'flex';
-            whatsappButton.style.display = 'flex';
-            setTimeout(() => {
-                backToTopButton.style.opacity = '1';
-                whatsappButton.style.opacity = '1';
-            }, 10);
+        
+        // Adiciona classe ao header quando scrollar
+        if (scrollPosition > 50) {
+            header.classList.add('scrolled');
         } else {
-            backToTopButton.style.opacity = '0';
+            header.classList.remove('scrolled');
+        }
+        
+        // Mostrar/ocultar botões flutuantes
+        if (scrollPosition > 300) {
+            backToTopButton.classList.add('show');
+            whatsappButton.style.opacity = '1';
+            whatsappButton.style.pointerEvents = 'auto';
+        } else {
+            backToTopButton.classList.remove('show');
             whatsappButton.style.opacity = '0';
-            setTimeout(() => {
-                backToTopButton.style.display = 'none';
-                whatsappButton.style.display = 'none';
-            }, 500);
+            whatsappButton.style.pointerEvents = 'none';
         }
     }
-
-    // Adiciona o evento de scroll para exibir ou esconder os botões
-    document.addEventListener('scroll', toggleButtons);
-
-    // Ação ao clicar no botão "Voltar ao Topo"
-    backToTopButton.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Evento de scroll
+    window.addEventListener('scroll', toggleButtons);
+    
+    // Voltar ao topo
+    backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
-
-    // Ação ao clicar no botão do WhatsApp
-    whatsappButton.addEventListener('click', function () {
-        window.location.href = 'https://wa.me/5511930222977';
+    
+    // WhatsApp button - abre em nova aba
+    whatsappButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open('https://wa.me/5511930246426', '_blank');
     });
+    
+    // Inicializa a verificação de scroll
+    toggleButtons();
 });

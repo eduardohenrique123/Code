@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo Henrique | Arquitetura de Experiências Digitais</title>
+    <title>Eduardo Henrique | Designer UI/UX & Front-end</title>
+    <meta name="description" content="Designer UI/UX especializado em criar interfaces digitais intuitivas e visualmente impactantes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
     <!--Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 
@@ -27,16 +35,16 @@
     </div>
 
     <!-- WhatsApp Floating Button -->
-<div id="whatsappButton" class="whatsapp-floating-button">
-    <a href="https://wa.me/5511930246426?text=Olá%20Vinicius,%20vim%20pelo%20seu%20site" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Conversar no WhatsApp"
-       class="whatsapp-link">
-        <i class="bi bi-whatsapp"></i>
-        <span class="whatsapp-tooltip"></span>
-    </a>
-</div>
+    <div id="whatsappButton" class="whatsapp-floating-button">
+        <a href="https://wa.me/5511930246426?text=Olá%20Eduardo,%20vim%20pelo%20seu%20site" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Conversar no WhatsApp"
+           class="whatsapp-link">
+            <i class="bi bi-whatsapp"></i>
+            <span class="whatsapp-tooltip">Vamos conversar?</span>
+        </a>
+    </div>
 
     <!--Container Geral-->
     <div class="container">
@@ -44,7 +52,7 @@
         <!--Header-->
         <header class="header">
             <div class="logo">
-                <img src="./assets/img/logonovapng.png" alt="Logo">
+                <img src="./assets/img/logo-ui-designer.png" alt="Eduardo Henrique - Designer UI/UX" width="180">
             </div>
             <div class="menu">
                 <label class="hamburger">
@@ -59,90 +67,111 @@
             </div>
             <div class="menu-aberto">
                 <nav class="nav-menu">
-                    <a href="#inicio">INÍCIO</a>
-                    <a href="#sobre">SOBRE</a>
-                    <a href="#servicos">SERVIÇOS</a>
-                    <a href="#portfolio">PORTFOLIO</a>
-                    <a href="#contato">CONTATO</a>
+                    <a href="#inicio" class="nav-link">INÍCIO</a>
+                    <a href="#sobre" class="nav-link">SOBRE</a>
+                    <a href="#processo" class="nav-link">PROCESSO</a>
+                    <a href="#portfolio" class="nav-link">PORTFÓLIO</a>
+                    <a href="#contato" class="nav-link">CONTATO</a>
                 </nav>
             </div>
         </header>
         <!--Fim Header-->
 
         <!--Início-->
-       <!--Início-->
-<main id="inicio" class="inicio">
-    <div class="container-inicio">
-        <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
-            <div class="titulo-inicio">
-                <h1>Eduardo Henrique</h1>
-                <h1 class="destaque-inicio">Arquiteto de Experiências Digitais</h1>
+        <main id="inicio" class="inicio">
+            <div class="container-inicio">
+                <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="titulo-inicio">
+                        <h1>Eduardo Henrique</h1>
+                        <h1 class="destaque-inicio">Designer UI/UX & Front-end</h1>
+                    </div>
+                    <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <p>Transformo conceitos em interfaces digitais que encantam os olhos e simplificam a vida dos usuários. Cada pixel é pensado para contar uma história.</p>
+                    </div>
+                    <div class="cta-container" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <a href="#contato" class="cta">
+                            <span>Vamos conversar</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#portfolio" class="cta secondary">
+                            <span>Ver trabalhos</span>
+                            <i class="bi bi-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="600">
+                    <img src="assets/img/hero-ui-designer.png" alt="Design de interfaces modernas" loading="lazy">
+                </div>
             </div>
-            <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <p>Transformo ideias em sistemas que funcionam, páginas que encantam e testes que asseguram confiança. Cada projeto carrega uma entrega acima do esperado.</p>
-            </div>
-            <a href="#contato" class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                <span>Fale Comigo</span>
-                <svg width="15px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-        </div>
-        <div class="complemento-inicio">
-       <!--    <img class="text" src="assets/img/complemento-esquerda.png" alt="Design complementar"> -->
-         <!--    <img class="qr-code" src="/assets/img/QR CODE.png" alt="QR Code para contato"> -->
-        </div>
-    </div>
-</main>
+        </main>
         <!--Fim Início-->
 
         <!--Sobre-->
         <section id="sobre" class="sobre">
             <div class="container-sobre">
-                <!-- Headline (mantida igual) -->
                 <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
                     <div class="headline-scroll" id="headline-scroll">
-                        <span class="bold">QUALIDADE</span>
+                        <span class="bold">USABILIDADE</span>
+                        <span class="divisor"></span>
+                        <span class="light">ESTÉTICA</span>
+                        <span class="divisor"></span>
+                        <span class="bold">ACESSIBILIDADE</span>
                         <span class="divisor"></span>
                         <span class="light">INOVAÇÃO</span>
                         <span class="divisor"></span>
-                        <span class="bold">PRECISÃO</span>
+                        <span class="bold">EMPATIA</span>
                         <span class="divisor"></span>
-                        <span class="light">CRIATIVIDADE</span>
-                        <span class="divisor"></span>
-                        <span class="bold">EXCELÊNCIA</span>
-                        <span class="divisor"></span>
-                        <span class="light">TECNOLOGIA</span>
+                        <span class="light">TENDÊNCIAS</span>
                         <span class="divisor"></span>
                     </div>
                 </div>
                 <div class="conteudo-sobre">
                     <div class="left-sobre" data-aos="fade-right" data-aos-duration="1000">
                         <div class="textos-sobre">
-                            <h1>Olá, me chamo Vinicius Pereira</h1>
-                            <p>Especialista em Qualidade de Software e desenvolvimento front-end, combino visão técnica com paixão por inovação para criar experiências digitais marcantes e funcionais.</p>
+                            <h1>Design com propósito e atenção aos detalhes</h1>
+                            <p>Com 8 anos de experiência em design de interfaces, meu trabalho combina princípios de UX com um olhar apurado para estética. Especializado em Design Systems, prototipação avançada e desenvolvimento front-end, garanto que cada projeto não só parece incrível, mas funciona perfeitamente.</p>
+                            
+                            <div class="dados-sobre">
+                                <div class="dado-item">
+                                    <span class="dado-numero">150+</span>
+                                    <span class="dado-label">Projetos entregues</span>
+                                </div>
+                                <div class="dado-item">
+                                    <span class="dado-numero">12</span>
+                                    <span class="dado-label">Prêmios de design</span>
+                                </div>
+                                <div class="dado-item">
+                                    <span class="dado-numero">98%</span>
+                                    <span class="dado-label">Satisfação dos clientes</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="redes-sociais">
-                            <a href="https://www.instagram.com/ninicius_?igsh=NndmeDR0cjJ1azFo&utm_source=qr" target="_blank">INSTAGRAM<i class="bi bi-arrow-right"></i></a>
-                            <a href="https://github.com/ViniciusPereira-coder" target="_blank">GITHUB<i class="bi bi-arrow-right"></i></a>
-                            <a href="https://www.linkedin.com/in/vinicius-de-moraes-10b50b151/r" target="_blank">LINKEDLN<i class="bi bi-arrow-right"></i></a>
-                            <a href="https://wa.me/5511930222977" class="whatsapp-link" target="_blank">WHATSAPP<i class="bi bi-arrow-right"></i></a>
+                            <a href="https://www.behance.net/eduardohenrique" target="_blank" class="social-link">
+                                <i class="bi bi-behance"></i> BEHANCE
+                            </a>
+                            <a href="https://dribbble.com/eduardohenrique" target="_blank" class="social-link">
+                                <i class="bi bi-dribbble"></i> DRIBBBLE
+                            </a>
+                            <a href="https://www.linkedin.com/in/eduardohenrique" target="_blank" class="social-link">
+                                <i class="bi bi-linkedin"></i> LINKEDIN
+                            </a>
                         </div>
                     </div>
                     <div class="right-sobre" data-aos="fade-left" data-aos-duration="1000">
                         <div class="imagem-sobre">
-                            <!-- Adicione loading="lazy" para otimização de carregamento -->
-                            <img src="assets/img/Trocando foto.jpg" 
-                                 alt="Vinicius Pereira - Desenvolvedor e QA Automation" 
+                            <img src="assets/img/eduardo-design.jpg" 
+                                 alt="Eduardo Henrique - Designer UI/UX" 
                                  loading="lazy"
-                                 width="" 
-                                 height="300">
+                                 width="400"
+                                 class="profile-image">
+                            <div class="badge-experiencia">
+                                <span>8+ anos criando experiências</span>
+                            </div>
                         </div>
-                    </div>              
-                        <!--     <div class="complemento-sobre">
-                            <img src="assets/img/texto-giratorio.png" alt="Elemento gráfico complementar">
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -154,312 +183,466 @@
             <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
                 <div class="headline-skills">
                     <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <h2>Minhas Skills</h2>
-                        <p>Tecnologias que domino e utilizo para criar soluções digitais impressionantes.</p>
+                        <h2>Minhas Especialidades</h2>
+                        <p>Domínio das principais ferramentas e metodologias do mercado de design digital.</p>
                     </div>
                 </div>
                 <div class="conteudo-skills">
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>Desenvolvimento Front-end</h3>
-                        <p>HTML5, CSS3, JavaScript moderno, Bootstrap, CSS e integração com APIs.</p>
+                        <div class="skill-icon">
+                            <img src="assets/icons/ui-ux.svg" alt="UI/UX Design" width="40">
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Interfaces intuitivas com foco em experiência do usuário, wireframes, protótipos e testes de usabilidade.</p>
+                        <div class="skill-tags">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Sketch</span>
+                        </div>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <i class="bi bi-shield-check"></i>
-                        <h3>Qualidade de Software</h3>
-                        <p>Selenium (Java), Cypress, Tosca, automação de testes e garantia de qualidade.</p>
+                        <div class="skill-icon">
+                            <img src="assets/icons/design-system.svg" alt="Design Systems" width="40">
+                        </div>
+                        <h3>Design Systems</h3>
+                        <p>Criação de sistemas de design escaláveis que garantem consistência e eficiência no desenvolvimento.</p>
+                        <div class="skill-tags">
+                            <span>Storybook</span>
+                            <span>Zeroheight</span>
+                            <span>Figma Libraries</span>
+                        </div>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                        <i class="bi bi-cloud"></i>
-                        <h3>Infraestrutura & DevOps</h3>
-                        <p>AWS, Git/GitHub, Maven e boas práticas de segurança (ISO 27001).</p>
+                        <div class="skill-icon">
+                            <img src="assets/icons/front-end.svg" alt="Front-end" width="40">
+                        </div>
+                        <h3>Front-end Development</h3>
+                        <p>Implementação de designs com código limpo e responsivo, garantindo fidelidade ao projeto original.</p>
+                        <div class="skill-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                        <i class="bi bi-palette"></i>
-                        <h3>Design UX/UI</h3>
-                        <p>Interfaces intuititvas, esteticamente atraentes e centradas na experiência do usúario.</p>
+                        <div class="skill-icon">
+                            <img src="assets/icons/motion.svg" alt="Motion Design" width="40">
+                        </div>
+                        <h3>Motion Design</h3>
+                        <p>Animações e microinterações que melhoram a experiência e engajamento do usuário.</p>
+                        <div class="skill-tags">
+                            <span>After Effects</span>
+                            <span>Principle</span>
+                            <span>Lottie</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Fim Skills-->
 
-        <!--Serviços-->
-        <section id="servicos" class="servicos">
-            <div class="container-servicos">
-                <div class="headline-servicos" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="titulo-servicos">
-                        <h1>Serviços</h1>
-                    </div>
-                    <div class="descricao-servicos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <p>Trabalho com excelência porque entendo que qualidade não é um diferencial — é o mínimo.</p>
-                    </div>
+        <!--Processo-->
+        <section id="processo" class="processo">
+            <div class="container-processo">
+                <div class="headline-processo" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Meu Processo de Trabalho</h1>
+                    <p>Metodologia comprovada que garante resultados excepcionais em cada projeto</p>
                 </div>
-                <div class="servicos-cards">
-                    <!--Serviço 1-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Desenvolvimento Web Personalizado</h1>
+                
+                <div class="etapas-processo">
+                    <!-- Etapa 1 -->
+                    <div class="etapa" data-aos="fade-up" data-aos-delay="200">
+                        <div class="etapa-numero">01</div>
+                        <div class="etapa-conteudo">
+                            <h3>Descoberta & Pesquisa</h3>
+                            <p>Entendimento profundo do negócio, usuários e objetivos através de entrevistas, análise de concorrência e definição de personas.</p>
+                            <ul class="etapa-ferramentas">
+                                <li>User Interviews</li>
+                                <li>Competitive Analysis</li>
+                                <li>User Personas</li>
+                            </ul>
                         </div>
-                        <div class="card-icon"><i class="bi bi-layout-text-window"></i></div>
                     </div>
-                    <!--Serviço 2-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Automação de Testes de Software</h1>
+                    
+                    <!-- Etapa 2 -->
+                    <div class="etapa" data-aos="fade-up" data-aos-delay="300">
+                        <div class="etapa-numero">02</div>
+                        <div class="etapa-conteudo">
+                            <h3>Estrutura & Wireframes</h3>
+                            <p>Definição da arquitetura de informação e fluxos de usuário, com validação através de wireframes de baixa e média fidelidade.</p>
+                            <ul class="etapa-ferramentas">
+                                <li>Information Architecture</li>
+                                <li>Wireframing</li>
+                                <li>User Flows</li>
+                            </ul>
                         </div>
-                        <div class="card-icon"><i class="bi bi-robot"></i></div>
                     </div>
-                    <!--Serviço 3-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Landing Pages de Alta Conversão</h1>
+                    
+                    <!-- Etapa 3 -->
+                    <div class="etapa" data-aos="fade-up" data-aos-delay="400">
+                        <div class="etapa-numero">03</div>
+                        <div class="etapa-conteudo">
+                            <h3>Design Visual & Prototipação</h3>
+                            <p>Criação da interface visual com atenção à identidade da marca, acessibilidade e tendências, transformada em protótipos interativos.</p>
+                            <ul class="etapa-ferramentas">
+                                <li>UI Design</li>
+                                <li>Design System</li>
+                                <li>Interactive Prototypes</li>
+                            </ul>
                         </div>
-                        <div class="card-icon"><i class="bi bi-megaphone"></i></div>
                     </div>
-                    <!--Serviço 4-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Debug & Soluções</h1>
+                    
+                    <!-- Etapa 4 -->
+                    <div class="etapa" data-aos="fade-up" data-aos-delay="500">
+                        <div class="etapa-numero">04</div>
+                        <div class="etapa-conteudo">
+                            <h3>Testes & Iteração</h3>
+                            <p>Validação com usuários reais através de testes de usabilidade, coleta de feedback e refinamento contínuo da solução.</p>
+                            <ul class="etapa-ferramentas">
+                                <li>Usability Testing</li>
+                                <li>A/B Testing</li>
+                                <li>Heatmaps</li>
+                            </ul>
                         </div>
-                        <div class="card-icon"><i class="bi bi-bug-fill"></i></div>
                     </div>
-                    <!--Serviço 5-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Consultoria em Qualidade de Software</h1>
+                    
+                    <!-- Etapa 5 -->
+                    <div class="etapa" data-aos="fade-up" data-aos-delay="600">
+                        <div class="etapa-numero">05</div>
+                        <div class="etapa-conteudo">
+                            <h3>Implementação & Handoff</h3>
+                            <p>Preparação para desenvolvimento com documentação detalhada, specs de design e colaboração próxima com a equipe de engenharia.</p>
+                            <ul class="etapa-ferramentas">
+                                <li>Design Specs</li>
+                                <li>Developer Handoff</li>
+                                <li>QA Design</li>
+                            </ul>
                         </div>
-                        <div class="card-icon"><i class="bi bi-graph-up-arrow"></i></div>
-                    </div>
-                    <!--Serviço 6-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Otimização de Performance</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-speedometer2"></i></div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Fim Serviços-->
-
-        <!--Complemento FREE YOUR MIND-->
-        <section id="free-your-mind" class="free-your-mind">
-            <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
-                <div class="line-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span> TECNOLOGIA </span>
-                    <span class="line"></span>
-                </div>
-                <div class="line-container center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <span class="line"></span>
-                    <span> COM </span>
-                    <span class="line"></span>
-                </div>
-                <div class="line-container right" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                    <span class="line"></span>
-                    <span> PROPÓSITO </span>
-                </div>
-            </div>
-        </section>
-        <!--Fim FREE YOUR MIND-->
+        <!--Fim Processo-->
 
         <!--Portfolio-->
         <section id="portfolio" class="portfolio">
             <div class="container-portfolio" data-aos="fade-up" data-aos-duration="1000">
                 <div class="headline-portfolio">
-                    <h1 class="titulo">Portfolio</h1>
-                    <span class="descricao">Alguns dos projetos que desenvolvi, unindo precisão técnica e sensibilidade criativa.</span>
+                    <h1 class="titulo">Portfólio Selecionado</h1>
+                    <span class="descricao">Projetos que representam minha abordagem centrada no usuário e atenção aos detalhes visuais.</span>
                 </div>
+                
+                <div class="filtro-portfolio">
+                    <button class="filtro-ativo">Todos</button>
+                    <button>UI/UX</button>
+                    <button>Web Design</button>
+                    <button>Mobile Apps</button>
+                    <button>Design Systems</button>
+                </div>
+                
                 <div class="container-case">
                     <!--Case 1-->
-                    <div class="case1" data-aos="fade-right" data-aos-delay="200">
+                    <div class="case1" data-aos="fade-up">
                         <div class="imagens-case">
                             <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/projeto1-1.png" alt="Projeto 1 - Imagem 1">
-                                <img src="assets/img/projeto1-2.png" alt="Projeto 1 - Imagem 2">
-                                <img src="assets/img/projeto1-3.png" alt="Projeto 1 - Imagem 3">
-                                <i class="bi bi-chevron-right next"></i>
+                                <img src="assets/img/projeto-sistema-financeiro-1.jpg" alt="Sistema Financeiro - Dashboard" loading="lazy">
+                                <img src="assets/img/projeto-sistema-financeiro-2.jpg" alt="Sistema Financeiro - Mobile" loading="lazy">
+                                <img src="assets/img/projeto-sistema-financeiro-3.jpg" alt="Sistema Financeiro - Gráficos" loading="lazy">
                             </div>
                         </div>
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
-                                <h1>LANDING PAGE</h1>
-                                <p>Desenvolvimento de landing page responsiva para campanha de marketing digital, com foco em alta conversão e performance otimizada.</p>
-                                <span>Front-end</span>
+                                <span class="case-categoria">UI/UX • Design System</span>
+                                <h1>Sistema Financeiro Corporativo</h1>
+                                <p>Redesign completo da plataforma de gestão financeira para uma fintech, resultando em 40% de aumento na eficiência dos usuários e redução de 30% no tempo para completar tarefas críticas.</p>
+                                <div class="case-detalhes">
+                                    <div>
+                                        <span>Cliente</span>
+                                        <strong>Fintech X</strong>
+                                    </div>
+                                    <div>
+                                        <span>Ano</span>
+                                        <strong>2023</strong>
+                                    </div>
+                                    <div>
+                                        <span>Desafio</span>
+                                        <strong>Complexidade de dados</strong>
+                                    </div>
+                                </div>
+                                <a href="#" class="case-link">Ver estudo de caso completo <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
+                    
                     <!--Case 2-->
-                    <div class="case2" data-aos="fade-left" data-aos-delay="300">
+                    <div class="case2" data-aos="fade-up">
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
-                                <h1>Cypress</h1>
-                                <p>
-                                Especializado em testes automatizados com Cypress, assegurando aplicações web estáveis e eficientes..
-
-                                </p>
-                                <span>QA Automation</span>
+                                <span class="case-categoria">E-commerce • UI Design</span>
+                                <h1>Plataforma de Moda Sustentável</h1>
+                                <p>Design de e-commerce focado em experiência de compra sustentável, com aumento de 25% na conversão e redução de 15% na taxa de rejeição. Integração de storytelling visual com foco nos valores da marca.</p>
+                                <div class="case-detalhes">
+                                    <div>
+                                        <span>Cliente</span>
+                                        <strong>EcoWear</strong>
+                                    </div>
+                                    <div>
+                                        <span>Ano</span>
+                                        <strong>2022</strong>
+                                    </div>
+                                    <div>
+                                        <span>Desafio</span>
+                                        <strong>Comunicação de valores</strong>
+                                    </div>
+                                </div>
+                                <a href="#" class="case-link">Ver estudo de caso completo <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="imagens-case">
                             <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/projeto2-1.png" alt="Projeto 2 - Imagem 1">
-                                <img src="assets/img/projeto2-2.png" alt="Projeto 2 - Imagem 2">
-                                <img src="assets/img/projeto2-3.png" alt="Projeto 2 - Imagem 3">
-                                <i class="bi bi-chevron-right next"></i>
+                                <img src="assets/img/projeto-moda-1.jpg" alt="E-commerce Moda - Homepage" loading="lazy">
+                                <img src="assets/img/projeto-moda-2.jpg" alt="E-commerce Moda - Produto" loading="lazy">
+                                <img src="assets/img/projeto-moda-3.jpg" alt="E-commerce Moda - Checkout" loading="lazy">
                             </div>
                         </div>
                     </div>
+                    
                     <!--Case 3-->
-                    <div class="case3" data-aos="fade-right" data-aos-delay="400">
+                    <div class="case3" data-aos="fade-up">
                         <div class="imagens-case">
                             <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/projeto3-1.png" alt="Projeto 3 - Imagem 1">
-                                <img src="assets/img/projeto3-2.png" alt="Projeto 3 - Imagem 2">
-                                <img src="assets/img/projeto3-3.png" alt="Projeto 3 - Imagem 3">
-                                <i class="bi bi-chevron-right next"></i>
+                                <img src="assets/img/projeto-app-1.jpg" alt="App Saúde - Onboarding" loading="lazy">
+                                <img src="assets/img/projeto-app-2.jpg" alt="App Saúde - Dashboard" loading="lazy">
+                                <img src="assets/img/projeto-app-3.jpg" alt="App Saúde - Relatórios" loading="lazy">
                             </div>
                         </div>
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
-                                <h1>A colocar algo</h1>
-                                <p>To pensando o que eu vou colocar</p>
-                                <span>Web Design</span>
+                                <span class="case-categoria">Mobile App • UX Research</span>
+                                <h1>Aplicativo de Saúde Mental</h1>
+                                <p>Design de aplicativo mobile com foco em acessibilidade e inclusão, resultando em avaliação média de 4.9 estrelas na App Store e reconhecimento como "App Essencial" na categoria Saúde em 2023.</p>
+                                <div class="case-detalhes">
+                                    <div>
+                                        <span>Cliente</span>
+                                        <strong>MindCare</strong>
+                                    </div>
+                                    <div>
+                                        <span>Ano</span>
+                                        <strong>2023</strong>
+                                    </div>
+                                    <div>
+                                        <span>Desafio</span>
+                                        <strong>Sensibilidade emocional</strong>
+                                    </div>
+                                </div>
+                                <a href="#" class="case-link">Ver estudo de caso completo <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <!--Case 4-->
-                    <div class="case4" data-aos="fade-left" data-aos-delay="500">
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>Eu tambem to pensando no que colcoar</h1>
-                                <p>Socorro Deus</p>
-                                <span>Front-end</span>
+                </div>
+                
+                <div class="portfolio-cta" data-aos="fade-up">
+                    <p>Quer ver mais projetos ou conhecer detalhes sobre meu processo?</p>
+                    <a href="#contato" class="cta">
+                        <span>Vamos conversar</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Fim Portfolio-->
+
+        <!--Depoimentos-->
+        <section class="depoimentos">
+            <div class="container-depoimentos" data-aos="fade-up">
+                <div class="headline-depoimentos">
+                    <h2>O que dizem sobre meu trabalho</h2>
+                    <p>Feedback de clientes e parceiros que colaboraram comigo</p>
+                </div>
+                
+                <div class="carrossel-depoimentos">
+                    <!-- Depoimento 1 -->
+                    <div class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="depoimento-avatar">
+                            <img src="assets/img/cliente-1.jpg" alt="Maria Silva" loading="lazy">
+                        </div>
+                        <div class="depoimento-conteudo">
+                            <div class="depoimento-texto">
+                                <p>"O Eduardo transformou completamente nossa plataforma. Seu entendimento de UX aliado ao senso estético refinado resultou em uma experiência que nossos usuários amam. Além disso, sua habilidade em traduzir designs para código foi um diferencial enorme no projeto."</p>
+                            </div>
+                            <div class="depoimento-autor">
+                                <strong>Maria Silva</strong>
+                                <span>Head of Product, Fintech X</span>
                             </div>
                         </div>
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/projeto4-1.png" alt="Projeto 4 - Imagem 1">
-                                <img src="assets/img/projeto4-2.png" alt="Projeto 4 - Imagem 2">
-                                <img src="assets/img/projeto4-3.png" alt="Projeto 4 - Imagem 3">
-                                <i class="bi bi-chevron-right next"></i>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="depoimento-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="depoimento-avatar">
+                            <img src="assets/img/cliente-2.jpg" alt="Carlos Mendes" loading="lazy">
+                        </div>
+                        <div class="depoimento-conteudo">
+                            <div class="depoimento-texto">
+                                <p>"Trabalhar com o Eduardo foi uma experiência excepcional. Seu Design System não apenas resolveu nossos problemas de consistência, como se tornou um ativo estratégico para nossa empresa. Sua atenção aos detalhes e capacidade de pensar em escala impressionaram toda a equipe."</p>
+                            </div>
+                            <div class="depoimento-autor">
+                                <strong>Carlos Mendes</strong>
+                                <span>CTO, Startup Y</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 3 -->
+                    <div class="depoimento-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="depoimento-avatar">
+                            <img src="assets/img/cliente-3.jpg" alt="Ana Oliveira" loading="lazy">
+                        </div>
+                        <div class="depoimento-conteudo">
+                            <div class="depoimento-texto">
+                                <p>"Como desenvolvedora, sempre apreciei trabalhar com designers que entendem as limitações técnicas. O Eduardo não só entende, como antecipa desafios e propõe soluções criativas que são bonitas e viáveis. Seus handoffs são os mais completos que já vi."</p>
+                            </div>
+                            <div class="depoimento-autor">
+                                <strong>Ana Oliveira</strong>
+                                <span>Front-end Lead, TechCompany Z</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Fim Portfolio-->
+        <!--Fim Depoimentos-->
 
         <!--Contato-->
-        <!-- Seção Contato -->
-<section id="contato" class="contato">
-    <div class="contato-content">
-        <!-- Lado Esquerdo - Formulário -->
-        <div class="contato-form" data-aos="fade-right">
-            <h2>Vamos construir algo incrível juntos</h2>
-            <p class="subtitulo">Se você busca um profissional que entrega soluções completas e não apenas códigos, estou pronto para transformar seu projeto digital.</p>
-            
-            <form class="form-contato" action="https://formsubmit.co/vinicius.moraespereira021@gmail.com" method="POST">
-                <div class="form-group">
-                    <input type="text" name="nome" id="nome" required>
-                    <label for="nome">Seu nome completo</label>
+        <section id="contato" class="contato">
+            <div class="contato-content">
+                <!-- Lado Esquerdo - Formulário -->
+                <div class="contato-form" data-aos="fade-right">
+                    <h2>Vamos criar algo incrível juntos</h2>
+                    <p class="subtitulo">Se você busca um designer que entrega não apenas belas interfaces, mas soluções que resolvem problemas reais, estou pronto para conversar sobre seu projeto.</p>
+                    
+                    <form class="form-contato" action="https://formsubmit.co/contato@eduardohenrique.design" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nome" id="nome" required>
+                            <label for="nome">Seu nome completo</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Seu melhor e-mail</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select name="tipo-projeto" id="tipo-projeto" required>
+                                <option value=""></option>
+                                <option value="ui-ux">UI/UX Design</option>
+                                <option value="website">Website/ Landing Page</option>
+                                <option value="app">Aplicativo Mobile</option>
+                                <option value="design-system">Design System</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <label for="tipo-projeto">Tipo de projeto</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="mensagem" id="mensagem" required></textarea>
+                            <label for="mensagem">Conte-me sobre seu projeto</label>
+                        </div>
+                        
+                        <input type="hidden" name="_next" value="https://eduardohenrique.design/obrigado.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <button type="submit" class="cta-button">
+                            <span>Enviar Mensagem</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
                 
-                <div class="form-group">
-                    <input type="email" name="email" id="email" required>
-                    <label for="email">Seu melhor e-mail</label>
-                </div>
-                
-                <div class="form-group">
-                    <textarea name="mensagem" id="mensagem" required></textarea>
-                    <label for="mensagem">Descreva seu projeto ou necessidade</label>
-                </div>
-                
-                <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-                <input type="hidden" name="_captcha" value="false">
-                
-                <button type="submit" class="cta-button">
-                    <span>Enviar Mensagem</span>
-                    <svg width="15px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </button>
-            </form>
-        </div>
-        
-        <!---Informações -->
-        <div class="contato-info" data-aos="fade-left">
-            <div class="info-card">
-                <h3>Informações de Contato</h3>
-                
-                <div class="info-item">
-                    <i class="bi bi-whatsapp"></i>
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <p><a href="https://wa.me/5511930222977">(11) 9 3022-2977</a></p>
+                <!---Informações -->
+                <div class="contato-info" data-aos="fade-left">
+                    <div class="info-card">
+                        <h3>Informações de Contato</h3>
+                        
+                        <div class="info-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/5511930246426">(11) 9 3024-6426</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:contato@eduardohenrique.design">contato@eduardohenrique.design</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>São Paulo, Brasil | Remoto Global</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-horario">
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sexta, 9h às 18h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="redes-contato">
+                            <p>Me siga nas redes:</p>
+                            <div class="redes-icons">
+                                <a href="https://www.behance.net/eduardohenrique" target="_blank" aria-label="Behance">
+                                    <i class="bi bi-behance"></i>
+                                </a>
+                                <a href="https://dribbble.com/eduardohenrique" target="_blank" aria-label="Dribbble">
+                                    <i class="bi bi-dribbble"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/eduardohenrique" target="_blank" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://www.instagram.com/eduardohenrique.design" target="_blank" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="bi bi-envelope"></i>
-                    <div>
-                        <h4>E-mail</h4>
-                        <p><a href="mailto:vinicius.moraespereira021@gmail.com">vinicius.moraespereira021@gmail.com</a></p>
-                    </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="bi bi-geo-alt"></i>
-                    <div>
-                        <h4>Localização</h4>
-                        <p>São Paulo, Brasil | Remoto Global</p>
-                    </div>
-                </div>
-                
-                <div class="redes-contato">
-                    <a href="https://github.com/ViniciusPereira-coder" target="_blank" aria-label="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/vinicius-de-moraes-10b50b151/" target="_blank" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://www.instagram.com/ninicius_?igsh=NndmeDR0cjJ1azFo" target="_blank" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/5511930246426" target="_blank" aria-label="WhatsApp">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
         <!--Fim Contato-->
 
         <footer class="footer">
             <div class="footer-container">
                 <!-- Coluna do Logo -->
                 <div class="footer-column logo-column" data-aos="fade-up">
-                    <img src="assets/img/logonovapng.png" alt="Vinicius Pereira - Logo" class="footer-logo">
-                    <p class="footer-slogan">Arquitetura de Experiências Digitais</p>
+                    <img src="assets/img/logo-ui-designer-light.png" alt="Eduardo Henrique - Designer UI/UX" class="footer-logo" width="160">
+                    <p class="footer-slogan">Design que une forma e função</p>
                     <div class="footer-social">
-                        <a href="https://www.instagram.com/ninicius_" target="_blank" aria-label="Instagram">
-                            <i class="bi bi-instagram"></i>
+                        <a href="https://www.behance.net/eduardohenrique" target="_blank" aria-label="Behance">
+                            <i class="bi bi-behance"></i>
                         </a>
-                        <a href="https://github.com/ViniciusPereira-coder" target="_blank" aria-label="GitHub">
-                            <i class="bi bi-github"></i>
+                        <a href="https://dribbble.com/eduardohenrique" target="_blank" aria-label="Dribbble">
+                            <i class="bi bi-dribbble"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/vinicius-de-moraes-10b50b151/" target="_blank" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/eduardohenrique" target="_blank" aria-label="LinkedIn">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="https://wa.me/5511930246426" target="_blank" aria-label="WhatsApp">
-                            <i class="bi bi-whatsapp"></i>
+                        <a href="https://www.instagram.com/eduardohenrique.design" target="_blank" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -470,33 +653,38 @@
                     <nav class="footer-nav">
                         <a href="#inicio" class="footer-link">Início</a>
                         <a href="#sobre" class="footer-link">Sobre</a>
-                        <a href="#servicos" class="footer-link">Serviços</a>
-                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                        <a href="#processo" class="footer-link">Processo</a>
+                        <a href="#portfolio" class="footer-link">Portfólio</a>
                         <a href="#contato" class="footer-link">Contato</a>
                     </nav>
                 </div>
         
-                <!-- Coluna de Contato -->
+                <!-- Coluna de Serviços -->
                 <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="footer-title">Contato</h3>
-                    <div class="footer-contact">
-                        <p><i class="bi bi-envelope"></i> vinicius.moraespereira021@gmail.com</p>
-                        <p><i class="bi bi-whatsapp"></i> (11) 9 3022-2977</p>
-                        <p><i class="bi bi-geo-alt"></i> São Paulo, Brasil</p>
-                    </div>
+                    <h3 class="footer-title">Serviços</h3>
+                    <nav class="footer-nav">
+                        <a href="#" class="footer-link">UI/UX Design</a>
+                        <a href="#" class="footer-link">Design Systems</a>
+                        <a href="#" class="footer-link">Web Design</a>
+                        <a href="#" class="footer-link">Mobile App Design</a>
+                        <a href="#" class="footer-link">Front-end Development</a>
+                    </nav>
                 </div>
         
-                <!-- Coluna de Newsletter (Opcional) -->
+                <!-- Coluna de Contato -->
                 <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
-              
-                        </button>
-                    </form>
+                    <h3 class="footer-title">Contato</h3>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-envelope"></i> contato@eduardohenrique.design</p>
+                        <p><i class="bi bi-whatsapp"></i> (11) 9 3024-6426</p>
+                        <p><i class="bi bi-geo-alt"></i> São Paulo, Brasil</p>
+                    </div>
                 </div>
             </div>
         
             <!-- Rodapé Inferior -->
             <div class="footer-bottom">
-                <p>&copy; 2024 Vinicius Pereira. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Eduardo Henrique Design. Todos os direitos reservados.</p>
                 <div class="footer-legal">
                     <a href="#">Política de Privacidade</a>
                     <span>•</span>
@@ -515,15 +703,19 @@
 
     <!-- Inicialização do AOS -->
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
     </script>
 
     <!--JavaScript-->
     <script src="assets/js/header.js"></script>
     <script src="assets/js/actionButton.js"></script>
     <script src="assets/js/menu.js"></script>
-    <script src="assets/js/slideSobre.js"></script>
     <script src="assets/js/slidePortfolio.js"></script>
+    <script src="assets/js/formValidation.js"></script>
 
 </body>
 

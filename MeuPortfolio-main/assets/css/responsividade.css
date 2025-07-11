@@ -1,505 +1,237 @@
-/* Responsividade para iPad (tablet) e dispositivos menores */
-@media (max-width: 1024px) {
+/* Responsividade geral */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .container-inicio {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-image {
+        order: -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .conteudo-inicio {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .cta-container {
+        justify-content: center;
+    }
+    
+    .conteudo-sobre {
+        grid-template-columns: 1fr;
+    }
+    
+    .right-sobre {
+        order: -1;
+    }
+    
+    .profile-image {
+        max-width: 400px;
+    }
+    
+    .case1, .case2, .case3 {
+        flex-direction: column;
+    }
+    
+    .case2 {
+        flex-direction: column;
+    }
+    
+    .contato-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .contato-info {
+        justify-content: center;
+    }
+    
+    .info-card {
+        max-width: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .dados-sobre {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .case-detalhes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet pequeno */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+    
+    .logo img {
+        width: 140px;
+    }
+    
+    .conteudo-inicio {
+        padding-top: 2rem;
+    }
+    
+    .headline-scroll span {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+    
+    .badge-experiencia {
+        bottom: -15px;
+        right: 15px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .box-skills {
+        padding: 1.5rem;
+    }
+    
+    .etapa {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .etapa-numero {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .etapas-processo::before {
+        left: 30px;
+    }
+    
+    .filtro-portfolio {
+        justify-content: center;
+    }
+    
+    .case-detalhes {
+        grid-template-columns: 1fr;
+    }
+    
+    .depoimento-card {
+        padding: 1.5rem;
+    }
+    
+    .info-card {
+        padding: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
     .container {
         padding: 0 1rem;
     }
-
-    /************************** GERAL ***/
+    
     .header {
-        padding: 1.5rem 1rem;
-    }
-
-    /************************** INÍCIO ***/
-    .inicio {
-        padding-top: 8rem;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .complemento-inicio {
-        position: relative;
-        margin-top: 3rem;
-        padding-bottom: 2rem;
-    }
-
-    /************************** SOBRE ***/
-    .sobre {
-        height: auto;
-        min-height: 100vh;
-        padding-top: 6rem;
-    }
-
-    .container-sobre {
-        height: auto;
+        padding: 0.8rem 1rem;
     }
     
-    .headline-sobre {
-        height: auto;
-        position: relative;
-        margin-bottom: 3rem;
-    }
-
-    .headline-scroll span {
-        font-size: 3.5rem;
-    }
-
-    .conteudo-sobre {
-        flex-direction: column;
-        height: auto;
-        gap: 3rem;
-        margin-top: 0;
-    }
-
-    .left-sobre {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-    }
-
-    .right-sobre {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-    }
-
-    .imagem-sobre {
-        position: relative;
-        justify-content: center;
-    }
-
-    .imagem-sobre img {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .complemento-sobre {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .complemento-sobre img {
-        position: unset;
-        width: 60%;
-        max-width: 300px;
-    }
-
-    /************************** SKILLS ***/
-    .skills {
-        padding: 4rem 1rem;
-    }
-
-    .conteudo-skills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .box-skills {
-        height: auto;
-        min-height: 300px;
-    }
-
-    /************************** SERVIÇOS ***/
-    .servicos {
-        padding-top: 6rem;
-    }
-
-    .headline-servicos {
-        flex-direction: column;
-        height: auto;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .titulo-servicos {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .titulo-servicos h1 {
-        font-size: clamp(3rem, 10vw, 6rem);
-    }
-
-    .descricao-servicos {
-        width: 100%;
-        text-align: left;
-        font-size: 1.4rem;
-    }
-
-    .servicos-cards {
-        gap: 1.5rem;
-    }
-
-    .card-servicos,
-    .card-servicos-left {
-        width: 100%;
-        margin: 0;
-        min-height: 150px;
-        padding: 1.5rem;
-        border-radius: 100px;
-    }
-
-    .card-titulo {
-        width: 75%;
-    }
-
-    /************************** FREE YOUR MIND ***/
-    .free-your-mind {
-        padding: 3rem 1rem;
-    }
-
-    .line {
-        margin: 0 2rem;
-    }
-
-    /************************** PORTFOLIO ***/
-    .portfolio {
-        padding: 6rem 1rem 2rem;
-    }
-
-    .container-portfolio {
-        gap: 2rem;
-    }
-
-    .headline-portfolio {
-        flex-direction: column;
-        height: auto;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .headline-portfolio .titulo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: clamp(3rem, 10vw, 6rem);
-    }
-
-    .headline-portfolio .descricao {
-        width: 100%;
-        text-align: left;
-        font-size: 1.4rem;
-    }
-
-    .container-case {
-        gap: 3rem;
-    }
-
-    .case1,
-    .case2,
-    .case3,
-    .case4 {
-        flex-direction: column;
-        gap: 2rem;
-        height: auto;
-    }
-
-    .case2,
-    .case4 {
-        flex-direction: column;
-    }
-    
-    .imagens-case {
-        width: 100%;
-        height: 50vh;
-    }
-
-    .textos-case {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-    }
-
-    .conteudo-textos-case h1 {
-        font-size: clamp(2rem, 8vw, 4rem);
-    }
-
-    /************************** CONTATO ***/
-    .contato {
-        padding: 6rem 1rem 2rem;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .container-contato {
-        height: auto;
-    }
-
-    .headline-contato {
-        flex-direction: column;
-        height: auto;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .titulo-contato {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .titulo-contato h1 {
-        font-size: clamp(3rem, 10vw, 6rem);
-        width: 100%;
-    }
-
-    .descricao-contato {
-        width: 100%;
-        text-align: left;
-    }
-
-    .descricao-contato a {
-        font-size: 1.4rem;
-    }
-
-    .conteudo-contato {
-        padding-top: 2rem;
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .logo-contato {
-        width: 100%;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .logo-contato img {
-        width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-    }
-
-    .formulario-contato {
-        width: 100%;
-        padding: 0;
-    }
-
-    /************************** FOOTER ***/
-    .footer {
-        padding: 3rem 1rem;
-    }
-
-    .container-footer {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .footer-column {
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-nav,
-    .social-links {
-        align-items: center;
-    }
-
-    .credits-column {
-        width: 100%;
-        text-align: center;
-        margin-top: 2rem;
-    }
-}
-
-/* Responsividade para mobile */
-@media (max-width: 768px) {
     .logo img {
         width: 120px;
     }
-
-    .nav-menu a {
-        font-size: 2.5rem;
+    
+    .nav-link {
+        font-size: 2rem;
     }
-
-    .headline-scroll span {
-        font-size: 2.5rem;
+    
+    .cta-container {
+        flex-direction: column;
+        width: 100%;
     }
-
-    .textos-sobre h1 {
-        font-size: 2.5rem;
+    
+    .cta {
+        width: 100%;
+        justify-content: center;
     }
-
-    .textos-sobre p {
-        font-size: 1.2rem;
+    
+    .dados-sobre {
+        grid-template-columns: 1fr;
     }
-
+    
+    .social-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
     .conteudo-skills {
         grid-template-columns: 1fr;
     }
-
-    .card-servicos,
-    .card-servicos-left {
-        flex-direction: column;
-        border-radius: 30px;
-        padding: 2rem;
-        min-height: auto;
+    
+    .etapa-conteudo {
+        padding: 1.5rem;
     }
-
-    .card-titulo {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1.5rem;
+    
+    .footer-container {
+        grid-template-columns: 1fr;
     }
-
-    .card-icon {
-        width: 80px;
+    
+    #whatsappButton {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
     }
-
-    .container-free-your-mind span {
-        font-size: clamp(2rem, 12vw, 8rem);
+    
+    #whatsappButton i {
+        font-size: 24px;
     }
-
-    .line {
-        margin: 0 1rem;
-    }
-
-    .imagens-case {
-        height: 40vh;
-    }
-
-    .descricao-contato a {
-        font-size: 1.2rem;
-    }
-
-    .formulario-contato h2 {
-        font-size: 2rem;
-    }
-
-    .formulario-contato p {
-        font-size: 1.1rem;
+    
+    .whatsapp-tooltip {
+        display: none;
     }
 }
 
-/* Ajustes para telas muito pequenas */
-@media (max-width: 480px) {
+/* Mobile pequeno */
+@media (max-width: 400px) {
     .header {
-        padding: 1rem;
+        padding: 0.8rem;
     }
-
+    
     .logo img {
         width: 100px;
     }
-
-    .nav-menu a {
-        font-size: 2rem;
-    }
-
-    .headline-scroll span {
-        font-size: 2rem;
-    }
-
-    .headline-scroll .divisor {
-        width: 10px;
-        height: 10px;
-        margin: 0 10px;
-    }
-
-    .textos-sobre h1 {
-        font-size: 2rem;
-    }
-
-    .titulo-servicos h1,
-    .headline-portfolio .titulo,
-    .titulo-contato h1 {
-        font-size: clamp(2.5rem, 12vw, 4rem);
-    }
-
-    .descricao-servicos,
-    .headline-portfolio .descricao,
-    .descricao-contato a {
-        font-size: 1.1rem;
-    }
-
-    .container-free-your-mind span {
-        font-size: clamp(1.5rem, 10vw, 6rem);
-    }
-
-    .line {
-        display: none;
-    }
-
-    .imagens-case {
-        height: 35vh;
-    }
-
-    .conteudo-textos-case h1 {
-        font-size: clamp(1.8rem, 8vw, 3rem);
-    }
-
-    .conteudo-textos-case p {
-        font-size: 1rem;
-    }
-
-    .fixed-button {
-        width: 45px;
-        height: 45px;
-    }
-
-    .fixed-button i {
-        font-size: 20px;
-    }
-
-
-    @media (max-width: 768px) {
-        .imagem-sobre {
-            width: 250px;
-            height: 250px;
-        }
-    }
-
-/* Para celulares */
-@media (max-width: 480px) {
-    .imagem-sobre {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-
-@media (max-width: 1024px) {
-    /* Ajustes para tablet */
-    .imagem-sobre {
-        width: 280px;
-        height: 280px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Ajustes para tablets menores */
-    .imagem-sobre {
-        width: 250px;
-        height: 250px;
-        animation: pulse-border 2.5s infinite;
+    
+    .profile-image {
+        max-width: 280px;
     }
     
-    .right-sobre {
-        justify-content: center;
-        margin-top: 2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajustes para mobile */
-    .imagem-sobre {
-        width: 200px;
-        height: 200px;
-        animation: pulse-border 3s infinite;
+    .badge-experiencia {
+        bottom: -10px;
+        right: 10px;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
     
-    .imagem-sobre:hover {
-        transform: scale(1.03);
+    .etapa-numero {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
     }
     
-    .headline-sobre {
-        margin-bottom: 1rem;
+    .etapas-processo::before {
+        left: 25px;
     }
-}
-
-
-
-
 }
